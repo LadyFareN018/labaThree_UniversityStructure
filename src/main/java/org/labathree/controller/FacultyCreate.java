@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface FacultyCreate {
 
-    default Faculty create(List<Department> departments, Human dean, String facultyName) {
+    default Faculty createFaculty(List<Department> departments, Human dean, String facultyName) {
         Faculty faculty = new Faculty();
         faculty.setDean(dean);
         faculty.setDepartments(departments);
